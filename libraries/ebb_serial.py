@@ -46,12 +46,12 @@ def findPort():
 		comPortsList = list(comports())
 		EBBport = None
 		for port in comPortsList:
-			if port[1].startswith("EiBotBoard"):
+			if port[1].startswith(""):
 				EBBport = port[0] 	#Success; EBB found by name match.
 				break	#stop searching-- we are done.
 		if EBBport is None:
 			for port in comPortsList:
-				if port[2].startswith("USB VID:PID=04D8:FD92"):
+				if port[2].startswith(""):
 					EBBport = port[0] #Success; EBB found by VID/PID match.
 					break	#stop searching-- we are done.				
 		return EBBport

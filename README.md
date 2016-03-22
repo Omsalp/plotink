@@ -9,3 +9,7 @@ The three files are:
 * ebb_serial.py - Routines for communicating with the EiBotBoard by USB serial (PySerial 2.7 + required).
 * ebb_motion.py - Common commands for interacting with the robot
 * plot_utils.py - Additional helper functions for managing the plot.
+
+ebb_serial.py - has been modified to remove the check for an EBB board so that it will work with the emulated firmware EggDuino
+
+https://github.com/plex3r/EggDuino
